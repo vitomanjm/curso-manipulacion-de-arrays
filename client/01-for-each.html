@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        padding-bottom: 30px;
+
+    }
+    #app {
+        padding-left: 50px;
+        padding-top: 50px;
+        text-decoration:none;
+        list-style: none;
+        background-color:beige;
+        margin: 15px;
+        padding-bottom: 100px;
+        display: grid;
+        justify-content:space-evenly;
+        
+    }
+
+    #app li {
+        padding: 10px;
+    }
+
+    #nav {
+        display: flex;
+        justify-content:space-evenly;
+        padding: 0 24px;
+        border-bottom: 1px solid var(--very-light-pink);
+        margin-top: 15px;
+
+        background-color: azure;
+        text-decoration:none;
+        list-style: none;
+        }
+
+</style>
+<body>
+
+<nav id="nav">
+    <li>
+        Contact
+    </li>
+    <li>
+        Delivery
+    </li>
+    <li>
+        Home
+    </li>
+</nav>
+    
+<div id="app">
+
+    <h1>Restaturant Menu</h1>
+<script> const products = 
+[
+{title: 'Burguer', price: 121},  
+{title: 'Pizza', price: 20},
+{title: 'Taco', price: 5},
+{title: 'Torta', price: 20},
+{title: 'Arepa', price: 5},
+];
+const app = document.getElementById('app');
+products.forEach(product => {
+    app.innerHTML += `<li>${product.title} -  ${product.price}$ <input type="checkbox" /> <li>` 
+
+
+})
+
+</script>
+</div>
+
+</body>
+</html>
