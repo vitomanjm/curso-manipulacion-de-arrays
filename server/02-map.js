@@ -20,3 +20,11 @@ also apply to letters */
 console.log('original:', letters)
 console.log('new', newArray)
 
+
+//----------------------------------------------
+
+const totals1 = [1, 2 ,3 , 4];
+
+const newArray1 = totals1.map(item => item + item); 
+
+console.log('exs:', newArray1)
